@@ -1,0 +1,74 @@
+import java.util.Scanner;
+
+public class helloworld {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.next();
+
+        System.out.println("A: ");
+
+       float A = sc.nextFloat() ;
+
+       System.out.println("+ - * /?");
+
+       char Q = input.charAt(0);
+
+       sc.next() ;
+
+       System.out.println("B: ");
+
+       float B = sc.nextFloat() ;
+
+       System.out.println("+-*/ ?");
+
+       sc.next() ;
+
+       char W = input.charAt(0);
+
+       System.out.println("C: ");
+
+       float C = sc.nextFloat() ;
+
+       float X  ;
+
+       if(
+        Q == '+'
+       ) {
+        X = A + B ;
+    }else if (
+         Q == '-'
+         ) {
+            X = A - B ;
+         }else if (
+            Q == '*'
+         ) {
+            X = A * B;
+         }else if(Q =='/') {
+            X = A / B ;
+         }
+         float Y  ;
+
+       if(
+        W == '+'
+       ) {
+        Y = X + C ;
+    }else if (
+         W == '-'
+         ) {
+            Y = X - C ;
+         }else if (
+            W == '*'
+         ) {
+            Y = X * C;
+         }else if (
+            W == '/'
+         )
+         {
+            Y = X / C ;
+         }
+
+       System.out.println(Y);
+
+        sc.close();
+    }
+}
