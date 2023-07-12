@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class Abc {
+public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+
+    System.out.println("A: ");
+
+   float A = sc.nextFloat() ;
+
+   System.out.println("+ - * /?");
+sc.nextLine() ;
+   String Q = sc.nextLine();
+   
+
+   System.out.println("B: ");
+   
+   float B = sc.nextFloat() ;
+
+   float Y = 0 ;
+ 
+   if(Q.equals("+")) {
+    Y = A + B ; 
+}  else if (Q.equals("-")) { 
+    Y = A - B ;
+ } else if(  Q.equals("*")) {
+     Y = A * B;
+ }else if(Q.equals("/")) {
+        Y = A / B ;
+     }
+     
+
+   System.out.println(Y);
+
+    sc.close();
+}
+}
