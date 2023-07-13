@@ -1,9 +1,14 @@
 import java.util.Arrays;
-public class array {
+public class arrylist {
     public static void main(String[] args){
         int X = 0;
         int  myArray[] = {10,5,8,15,3} ;
-Arrays.sort(myArray);
-System.out.println(myArray[4]);
+        for(int i = 0;i < 5 ; i ++)
+        {
+            if(X < myArray[i]){
+                X = myArray[i];
+            }
+        }
+System.out.println(X);
 }
 }
