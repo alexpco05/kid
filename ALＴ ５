@@ -1,0 +1,25 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Scanner;
+public class array {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("猜猜我是誰?");
+        int A = sc.nextInt() ;
+        ArrayList<Integer> myArray = new ArrayList<Integer>
+        (Arrays.asList(10,5,8,15,3));
+        boolean X = false;
+for(int i = 0 ; i < 5; i ++) {
+if(myArray.get(i) == A){
+    X = true;
+    break;
+}
+}
+if(X == true){
+System.out.println("數字找到了!");
+}else{
+System.out.println("數字未找到了喔!");
+sc.close();
+}
+}
+}
