@@ -1,0 +1,16 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+public class array {
+    public static void main(String[] args){
+        int X = 0;
+        ArrayList<Integer> myArray = new ArrayList<Integer>
+        (Arrays.asList(10,5,8,15,3));
+for ( int i = 0 ; i < 5 ; i ++ )
+{
+    if(X < myArray.get(i)){
+        X = myArray.get(i);
+}
+}
+System.out.println(X);
+}
+}
