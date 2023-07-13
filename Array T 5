@@ -13,7 +13,7 @@ if(myArray[i] == A){
     break;
 }
 }
-if(X = true){
+if(X ＝＝ true){
 System.out.println("數字找到了!");
 }else{
 System.out.println("數字未找到了喔!");
