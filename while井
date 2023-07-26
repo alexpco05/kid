@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class newThree {
+    public static void main(String[] args) {
+        char A[] = {' ',' ',' ',' ',' ',' ',' ',' ',' ', };
+        Scanner sc =  new Scanner(System.in);
+         System.out.println("從0開始數喔");
+        System.out.println("入位置e.ge 左上第一個係0");
+         
+         char X = 'X' ;
+         char O = 'o' ;
+         int i = 0 ;
+        System.out.println( A[0] + " | "+ A[1]  +" | " + A[2] );
+        System.out.println("----------");
+        System.out.println( A[3] + " | "+ A[4]  +" | " + A[5] );
+        System.out.println("----------");
+        System.out.println( A[6] + " | "+ A[7]  +" | " + A[8] );
+
+        while(i < 10) {
+        System.out.println("p : ?");
+        int x = sc.nextInt();
+        A[x] = X ;
+        System.out.println( A[0] + " | "+ A[1]  +" | " + A[2] );
+        System.out.println("----------");
+        System.out.println( A[3] + " | "+ A[4]  +" | " + A[5] );
+        System.out.println("----------");
+        System.out.println( A[6] + " | "+ A[7]  +" | " + A[8] );
+        if((A[0] == 'X' && A[3] == 'X' && A[6] == 'X') ||
+            (A[1] == 'X' && A[4] == 'X' && A[7] == 'X') ||
+            (A[2] == 'X' && A[5] == 'X' && A[8] == 'X') ||
+            (A[0] == 'X' && A[1] == 'X' && A[2] == 'X') ||
+            (A[3] == 'X' && A[4] == 'X' && A[5] == 'X') ||
+            (A[6] == 'X' && A[7] == 'X' && A[8] == 'X') ||
+            (A[0] == 'X' && A[4] == 'X' && A[8] == 'X') ||
+            (A[2] == 'X' && A[4] == 'X' && A[6] == 'X') 
+            ){
+                System.out.println( "P1 win" );
+              sc.close();
+              return;
+         }
+         System.out.println("p 2: ?");
+         int Y = sc.nextInt();
+         sc.nextLine();
+         A[Y] = O;
+         System.out.println( A[0] + " | "+ A[1]  +" | " + A[2] );
+         System.out.println("----------");
+         System.out.println( A[3] + " | "+ A[4]  +" | " + A[5] );
+         System.out.println("----------");
+         System.out.println( A[6] + " | "+ A[7]  +" | " + A[8] );
+         
+         
+
+         if((A[0] == 'o' && A[3] == 'o' && A[6] == 'o') ||
+            (A[1] == 'o' && A[4] == 'o' && A[7] == 'o') ||
+            (A[2] == 'o' && A[5] == 'o' && A[8] == 'o') ||
+            (A[0] == 'o' && A[1] == 'o' && A[2] == 'o') ||
+            (A[3] == 'o' && A[4] == 'o' && A[5] == 'o') ||
+            (A[6] == 'o' && A[7] == 'o' && A[8] == 'o') ||
+            (A[0] == 'o' && A[4] == 'o' && A[8] == 'o') ||
+            (A[2] == 'o' && A[4] == 'o' && A[6] == 'o') 
+            ){
+                System.out.println( "P2 win" );
+              sc.close();
+              return;
+         }
+        }
+        sc.close();
+    }
+}
