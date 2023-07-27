@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class AAA {
+  public double add(double a, double b) {
+   double sum = a + b;
+   return sum;
+}  
+  public double reduce(double a, double b) {
+    double ABC = a - b;
+    return ABC;
+  }
+  public double multiplier(double a,double b) {
+    double XXX = a * b;
+    return XXX;
+  }
+  public double divisor (double a,double b) {
+    double Div = a / b;
+    return Div;
+  }
+  public static void main(String[] args){
+    AAA sum = new AAA();
+    AAA ABC = new AAA();
+    AAA XXX = new AAA();
+    AAA Div = new AAA();
+  Scanner sc = new Scanner(System.in);
+  System.out.println("a ?");
+  double a = sc.nextDouble();
+  System.out.println("b ?");
+  double b = sc.nextDouble();
+  System.out.println("+ - * /?");
+  String Q = sc.next();
+  
+
+  if (Q.equals("+")) 
+  {
+    double result1 = sum.add(a,b);
+    System.out.println(  result1 );
+}else if (Q.equals("-")) {
+    double result1 = ABC.reduce(a,b);
+    System.out.println(  result1 );
+}else if (Q.equals("*")) {
+    double result1 = XXX.multiplier(a,b);
+    System.out.println(  result1 );
+}else if (Q.equals("/")) {
+    double result1 = Div.divisor(a,b);
+    System.out.println(  result1 );
+}
+sc.close();
+  }
+ 
+}
