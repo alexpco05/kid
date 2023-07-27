@@ -20,6 +20,7 @@ public class AAA {
   public static void main(String[] args){
     
   Scanner sc = new Scanner(System.in);
+  double result1 = 0;
   System.out.println("a ?");
   double a = sc.nextDouble();
   System.out.println("b ?");
@@ -29,20 +30,22 @@ public class AAA {
    AAA calc = new AAA();
   if (Q.equals("+")) 
   {
-    double result1 = calc.add(a, b);
-    System.out.println(  result1 );
+    result1 = calc.add(a, b);
+    
 }else if (Q.equals("-")) {
-    double result2 = calc.reduce(a, b);
-    System.out.println(  result2 );
+    result1 = calc.reduce(a, b);
+    
 }else if (Q.equals("*")) {
-    double result3 = calc.multiplier(a, b);
-    System.out.println(  result3 );
+     result1 = calc.multiplier(a, b);
+    
 }else if (Q.equals("/")) {
-    double result4 = calc.divisor(a, b);
-    System.out.println(  result4 );
+     result1 = calc.divisor(a, b);
+    
 }
+System.out.println(result1);
 sc.close();
   }
  
 }
+
 
