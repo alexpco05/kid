@@ -18,10 +18,7 @@ public class AAA {
     return Div;
   }
   public static void main(String[] args){
-    AAA sum = new AAA();
-    AAA ABC = new AAA();
-    AAA XXX = new AAA();
-    AAA Div = new AAA();
+    
   Scanner sc = new Scanner(System.in);
   System.out.println("a ?");
   double a = sc.nextDouble();
@@ -29,23 +26,23 @@ public class AAA {
   double b = sc.nextDouble();
   System.out.println("+ - * /?");
   String Q = sc.next();
-  
-
+   AAA calc = new AAA();
   if (Q.equals("+")) 
   {
-    double result1 = sum.add(a,b);
+    double result1 = calc.add(a, b);
     System.out.println(  result1 );
 }else if (Q.equals("-")) {
-    double result1 = ABC.reduce(a,b);
-    System.out.println(  result1 );
+    double result2 = calc.reduce(a, b);
+    System.out.println(  result2 );
 }else if (Q.equals("*")) {
-    double result1 = XXX.multiplier(a,b);
-    System.out.println(  result1 );
+    double result3 = calc.multiplier(a, b);
+    System.out.println(  result3 );
 }else if (Q.equals("/")) {
-    double result1 = Div.divisor(a,b);
-    System.out.println(  result1 );
+    double result4 = calc.divisor(a, b);
+    System.out.println(  result4 );
 }
 sc.close();
   }
  
 }
+
